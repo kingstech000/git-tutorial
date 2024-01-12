@@ -1,0 +1,41 @@
+Git commands
+
+1.  Setting username: 
+      _git config --global user.name <name>_
+2.  Setting email:
+      _git config --global user.email <email>_
+3.  Create repository:
+      _git init_
+4.  Check status:
+      _git status_
+5.  Staging files:
+      _git add <filename>_ 
+6.  Making commits:
+      _git commit -m "<message>"_
+7.  Show commits logs:
+      _git commit_
+8.  Show commit logs in a single line:
+      _git commit --oneline_ 
+9.  Undoing things [i]:
+      _git checkout <commit id>_
+10. Go back to original state in the code: 
+      _git checkout master_
+11. Undoing things [ii]:
+      _git revert <commit id>_
+12. Undoing things [iii]:
+      _git reset <commit id> --hard_
+13. Creating new branch:
+      _git branch <branch name>_
+      _git checkout -b <branch name>_ #this creates a branch checks it out at the same time
+14. See a list of all branches:
+      _git branch -a_
+15. Be on a branch: 
+      _git checkout <branch name>_
+16. Deleting a branch:
+      _git branch -d <branch name>_ #this will only work when the branch have been fully merged
+      _git branch -D <branch name>_ #this can delete the branch without merging
+17. Merging to master branch: #you have to be on the master branch first
+      _git merge <branch name>_
+18. Pushing local repository to online repository
+      _git push <repository url> master
+     
